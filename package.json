@@ -1,0 +1,15 @@
+{
+  "name": "homework-5",
+  "version": "1.0.0",
+  "description": "This is a homework assignment to create a responsive website referencing an xd file and have it responsive, only the home page for now however",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server"
+  },
+  "author": "Abril Zaragoza-Palos",
+  "license": "ISC"
+}

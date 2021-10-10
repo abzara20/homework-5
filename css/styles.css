@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Caveat;
+  src: url(../css/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: Caveat-bold;
+  src: url(../css/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(../css/fonts/GillSans.ttf);
+}
+@font-face {
+  font-family: Gill-light;
+  src: url(../css/fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: Gill-italic;
+  src: url(../css/fonts/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: Lato-italic;
+  src: url(../css/fonts/Lato-Italic.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+.wrapper--home {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(242, 92, 84, 0.6)), to(rgba(242, 92, 84, 0.6))), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  width: 100%;
+  height: 90px;
+  padding: 40px 50px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .logo {
+  background-image: url(../images/Logo.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 167px;
+  height: 55px;
+}
+nav .links {
+  max-width: 551px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .links a {
+  text-decoration: none;
+  color: black;
+  font-family: Caveat;
+  font-size: 25px;
+  margin-left: 41px;
+}
+nav .links #login {
+  padding: 0;
+  height: 52px;
+  line-height: 52px;
+  width: 158px;
+  background-color: #ffd972;
+  text-align: center;
+  border-radius: 25px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 75px;
+  font-family: Lato-italic;
+  font-size: 15px;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer .footer-links {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer .footer-links a {
+  color: black;
+  text-decoration: none;
+}
+footer .social {
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
