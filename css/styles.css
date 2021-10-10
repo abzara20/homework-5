@@ -56,6 +56,10 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
+.wrapper #content {
+  height: calc(100vh - 165px);
+  width: 100%;
+}
 
 nav {
   width: 100%;
@@ -152,4 +156,11 @@ footer .social {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.home {
+  height: 100%;
+  width: 442px;
+  margin: 0 auto;
+  background-color: aqua;
 }
