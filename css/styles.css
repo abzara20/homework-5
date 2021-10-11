@@ -19,6 +19,10 @@
   src: url(../css/fonts/GillSans-Italic.ttf);
 }
 @font-face {
+  font-family: Lato;
+  src: url(../css/fonts/Lato-Regular.ttf);
+}
+@font-face {
   font-family: Lato-italic;
   src: url(../css/fonts/Lato-Italic.ttf);
 }
@@ -108,7 +112,22 @@ nav .links #login {
   text-align: center;
   border-radius: 25px;
 }
+nav .mobile {
+  display: none;
+}
+nav .fa-bars {
+  font-size: 20px;
+}
 
+@media screen and (max-width: 1000px) {
+  nav .links {
+    display: none;
+  }
+  nav .mobile {
+    display: inline;
+    width: 40px;
+  }
+}
 footer {
   width: 100%;
   position: absolute;
@@ -158,9 +177,156 @@ footer .social {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1000px) {
+  footer {
+    font-size: 10px;
+  }
+  footer .footer-links .login {
+    font-family: Gill-italic;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    padding: 0 20px 30px 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  footer #copyright {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  footer .social {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  footer .footer-links {
+    width: 100%;
+    position: absolute;
+    padding: 10px 20px 0 20px;
+    bottom: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  footer .footer-links a {
+    margin: 0 6px;
+  }
+  footer .footer-links .login {
+    font-family: Lato-italic;
+    font-weight: normal;
+  }
+}
 .home {
   height: 100%;
   width: 442px;
   margin: 0 auto;
-  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .circle-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.home .circle-holder .little-circle {
+  height: 167.88px;
+  width: 167.88px;
+  background-color: #fcbcb8;
+  padding: 65.5px 31px;
+  border-radius: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: absolute;
+  z-index: 0;
+  margin-left: 350px;
+  margin-top: -250px;
+}
+.home .circle-holder .little-circle p {
+  font-family: Lato-italic;
+  font-size: 10px;
+}
+.home .circle-holder .big-circle {
+  height: 358px;
+  width: 358px;
+  background-color: #ffd972;
+  border-radius: 179px;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  z-index: 2;
+}
+.home .circle-holder .big-circle h1 {
+  font-family: Caveat;
+  font-size: 25px;
+  margin-bottom: 29.4px;
+}
+.home .circle-holder .big-circle p {
+  font-family: Lato;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1000px) {
+  .home .circle-holder .little-circle {
+    margin-left: 180px;
+    margin-top: -400px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home .circle-holder .little-circle {
+    height: 121.04px;
+    width: 121.04px;
+    margin-left: 180px;
+    margin-top: -250px;
+    font-size: 8px;
+  }
+  .home .circle-holder .big-circle {
+    height: 258px;
+    width: 258px;
+    padding: 0 60px;
+  }
+  .home .circle-holder .big-circle h1 {
+    font-size: 17px;
+  }
+  .home .circle-holder .big-circle p {
+    font-size: 9px;
+  }
 }

@@ -41,4 +41,22 @@ nav {
       border-radius: 25px;
     }
   }
+  .mobile {
+    display: none;
+  }
+  .fa-bars {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    .links {
+      display: none;
+    }
+    .mobile {
+      display: inline;
+      width: 40px;
+    }
+  }
 }
